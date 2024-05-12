@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { styled } from "@mui/system";
+import SignOutButton from "./signOutButton";
 
 const StyledContainer = styled("div")({
   display: "flex",
@@ -24,6 +25,7 @@ export function Layout({ children }: LayoutProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <SignOutButton />
       <StyledContainer>{children}</StyledContainer>
     </>
   );
